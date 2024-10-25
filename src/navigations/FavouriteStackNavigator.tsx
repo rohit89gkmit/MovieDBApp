@@ -4,6 +4,7 @@ import {ROUTES} from '@src/constants/routes';
 import {FavouritesScreen} from '@src/screens';
 
 const Stack = createNativeStackNavigator();
+
 const FavouriteStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>

@@ -2,10 +2,12 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import {DrawerScreenProps} from '@react-navigation/drawer';
 import {ROUTES} from '@src/constants/routes';
+
 declare global {
   type MovieStackParamList = {
     MOVIESSCREEN: undefined;
     MOVIEDETAILSSCREEN: undefined;
+    SEARCHSCREEN: undefined;
   };
   type FavouriteStackParamList = {
     FAVOURITESSCREEN: undefined;
@@ -21,6 +23,10 @@ declare global {
   type MovieScreenProps = NativeStackScreenProps<
     MovieStackParamList,
     ROUTES.MOVIESSCREEN
+  >;
+  type SearchScreenProps = NativeStackScreenProps<
+    MovieStackParamList,
+    ROUTES.SEARCHSCREEN
   >;
   type MovieDetailsScreenProps = NativeStackScreenProps<
     MovieStackParamList,

@@ -1,9 +1,9 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {ROUTES} from '@src/constants/routes';
 import TabNavigator from './TabNavigator';
 import {ProfileScreen} from '@src/screens';
+
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
@@ -24,5 +24,3 @@ const DrawerNavigator = () => {
 };
 
 export default DrawerNavigator;
-
-const styles = StyleSheet.create({});

@@ -7,6 +7,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const Tab = createBottomTabNavigator();
+
 const TabNavigator = () => {
   return (
     <Tab.Navigator screenOptions={{headerShown: false}}>
